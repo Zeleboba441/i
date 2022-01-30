@@ -1,0 +1,19 @@
+﻿<Page x:Class="Lublicorp_2._0.EditPersonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lublicorp_2._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EditPersonPage">
+    <StackPanel>
+        <Label Content="Фамилия"/>
+        <TextBox Text="{Binding Person.LastName}"/>
+        <Label Content="Имя"/>
+        <TextBox Text="{Binding Person.FirstName}"/>
+        <Button Content="Save" Command="{Binding AddPerson}" HorizontalAlignment="Center" Padding="5" Margin="3" Background="#FFEA8080"/>
+        <Button Content="List humans " Command="{Binding ListPerson }" HorizontalAlignment="Center" Padding="5" Margin="3" Background="#FFEA8080"/>
+       
+    </StackPanel>
+</Page>
